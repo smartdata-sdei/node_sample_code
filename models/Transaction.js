@@ -177,9 +177,6 @@ const transactionSchema = Schema({
     earningToLot: {
         type: Number
     },
-    simpleParkConvenienceFee: {
-        type: Number
-    },
     earningToAdmin: {
         type: Number
     },

@@ -1,10 +1,6 @@
 let nodemailer = require('nodemailer');
 let twilio = require('twilio');
 
-let twilioAccountSid = '';
-let twilioAuthToken = '';
-let twilioNumber = '';
-
 let environment = {
 
     app_name: process.env.NODE_ENV === 'production' ? 'Management' : 'Management',
