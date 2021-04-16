@@ -22,9 +22,7 @@ const transactions_locations_update_controller = require('./routes-controller/tr
 const mongooseOptions = {
   useNewUrlParser: true,
   useFindAndModify: false,
-  useCreateIndex: true,
-  // useUnifiedTopology: true,
-  // serverSelectionTimeoutMS: 30000
+  useCreateIndex: true
 };
 
 const corsOptions = {
@@ -92,10 +90,6 @@ cron.schedule('* * * * *', () => {
   // console.log('Running cron every minute', ++num);
   transactions_locations_update_controller.updateTransactionsLocations();
 });
-
-// cron.schedule('* * * * * *', () => {
-//   // dbAutoBackUp();
-// });
 
 cron.schedule('1 * * * *', () => {
   // console.log('CRON running: ', num++);
