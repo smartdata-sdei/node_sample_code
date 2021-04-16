@@ -11,8 +11,6 @@ router.get('/', function (req, res, next){
   res.send('Respond with a resource');
 });
 
-router.get('/test', users_controller.test);
-
 router.get('/findTerms', users_controller.findTerms);
 
 router.get('/findDepartments', users_controller.findDepartments);
